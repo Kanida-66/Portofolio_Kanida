@@ -5,10 +5,10 @@ window.addEventListener('scroll', function() {
     // ถ้าเลื่อนหน้าจอลงมามากกว่า 50px
     if (window.scrollY > 50) {
         navbar.style.padding = '10px 5%';
-        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.backgroundColor = '#1F2937';
     } else {
         // ถ้าอยู่ด้านบนสุด
         navbar.style.padding = '20px 5%';
-        navbar.style.backgroundColor = '#fff';
+        navbar.style.backgroundColor = '#1F2937';
     }
 });
