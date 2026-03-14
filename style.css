@@ -64,7 +64,7 @@ header {
 .hero {
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
     flex-direction: column;
@@ -76,13 +76,17 @@ header {
 }
 
 .profile{
-    grid-column:2;
-    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
     
 }
 
 .hero-text{
-    grid-column:3;
+    text-align:center;
+    max-width:500px;
+    margin:auto;
 }
 
 .hero-text p{
@@ -211,54 +215,3 @@ footer {
 }
 
 
-/* Responsive สำหรับมือถือ */
-@media (max-width: 768px) {
-
-.hero{
-    grid-template-columns:1fr;
-    height:auto;
-    padding-top:120px;
-}
-
-.profile{
-    grid-column:auto;
-}
-
-.hero-text{
-    grid-column:auto;
-}
-
-.hero-text p{
-    font-size:16px;
-}
-
-/* รูปโปรไฟล์ */
-.profile img{
-    width:180px;
-    height:180px;
-}
-
-/* skill grid */
-.skills-grid{
-    grid-template-columns:1fr 1fr;
-}
-
-.skills2-grid{
-    grid-template-columns:1fr;
-}
-
-/* project grid */
-.project-grid{
-    grid-template-columns:1fr;
-}
-
-/* navbar */
-header{
-    flex-direction:column;
-}
-
-.nav-links{
-    margin-top:10px;
-}
-
-}
