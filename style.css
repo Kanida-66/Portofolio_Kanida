@@ -9,7 +9,6 @@
       background: #000;
       color: #e0e0e0;
       line-height: 1.6;
-      cursor: none; /* ซ่อน cursor ปกติ */
       overflow-x: hidden;
       background: linear-gradient(135deg, #000 0%, #0a1a2a 100%);
     }
@@ -28,28 +27,6 @@
     a {
       text-decoration: none;
       color: inherit;
-    }
-
-    /* Custom Cursor */
-    .cursor {
-      position: fixed;
-      width: 20px;
-      height: 20px;
-      border: 2px solid var(--text-light);
-      border-radius: 50%;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      transition: all 0.15s ease;
-      z-index: 9999;
-      mix-blend-mode: difference;
-      box-shadow: 0 0 10px var(--accent-glow);
-    }
-
-    .cursor.hover {
-      width: 60px;
-      height: 60px;
-      background: rgba(255,255,255,0.15);
-      border-color: transparent;
     }
 
     
