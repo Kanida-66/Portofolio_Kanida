@@ -127,7 +127,6 @@
     .menu-toggle {
       display: none;
       font-size: 1.8rem;
-      cursor: pointer;
     }
 
     /* Hero */
@@ -170,7 +169,7 @@
       margin-bottom: 2.5rem;
     }
 
-    .cursor-blink {
+    /* .cursor-blink {
       display: inline-block;
       width: 3px;
       height: 1.2em;
@@ -178,7 +177,7 @@
       animation: blink 0.8s infinite;
       vertical-align: middle;
       box-shadow: 0 0 10px var(--accent);
-    }
+    } */
 
     @keyframes blink {
       0%,100% { opacity: 1; }
