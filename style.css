@@ -480,25 +480,46 @@
       .entry { width: 80%; left: 70px !important; text-align: left !important; }
 
       .edu-header {
-    flex-direction: column;   /* เปลี่ยนการจัดเรียงจากซ้าย-ขวา เป็น บน-ล่าง */
-    align-items: center;      /* จัดให้อยู่กึ่งกลาง */
-    justify-content: center;  /* จัดให้อยู่ตรงกลางแนวตั้ง (หากมีการกำหนดความสูง) */
-    text-align: center;       /* ให้ตัวหนังสืออยู่กึ่งกลางด้วย */
-    gap: 1rem;                /* ลดระยะห่างระหว่างไอคอนกับข้อความลงนิดหน่อยให้ดูสมดุลบนมือถือ */
-  }
+        flex-direction: column;   /* เปลี่ยนการจัดเรียงจากซ้าย-ขวา เป็น บน-ล่าง */
+        align-items: center;      /* จัดให้อยู่กึ่งกลาง */
+        justify-content: center;  /* จัดให้อยู่ตรงกลางแนวตั้ง (หากมีการกำหนดความสูง) */
+        text-align: center;       /* ให้ตัวหนังสืออยู่กึ่งกลางด้วย */
+        gap: 1rem;                /* ลดระยะห่างระหว่างไอคอนกับข้อความลงนิดหน่อยให้ดูสมดุลบนมือถือ */
+      }
 
-  /* (ทางเลือก) ปรับขนาดไอคอนให้พอดีกับหน้าจอมือถือมากขึ้น */
-  .edu-icon {
-    font-size: 3rem; 
-    margin-bottom: 0.5rem;
-  }
-  
-  /* ปรับให้รายละเอียดด้านในจัดกึ่งกลางตามไปด้วย */
-  .edu-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+      /* (ทางเลือก) ปรับขนาดไอคอนให้พอดีกับหน้าจอมือถือมากขึ้น */
+      .edu-icon {
+        font-size: 3rem; 
+        margin-bottom: 0.5rem;
+      }
+      
+      /* ปรับให้รายละเอียดด้านในจัดกึ่งกลางตามไปด้วย */
+      .edu-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info-item {
+        flex-direction: column;
+        align-items: center; /* จัดให้อยู่ชิดซ้าย (หรือแก้เป็น center ถ้าอยากให้อยู่ตรงกลาง) */
+        gap: 0.5rem; /* เพิ่มช่องว่างระหว่างบรรทัดเล็กน้อย */
+        text-align: center;
+      }
+
+      /* (ทางเลือก) ปรับให้ .label สีอ่อนลงหรือเล็กลงนิดหน่อยเพื่อให้ดูแยกส่วนกับ .value ชัดเจนขึ้น */
+      .info-item .label {
+        margin-bottom: 0.2rem;
+      }
+
+      .gpa {
+        align-items: center;   /* ดึงกล่องข้อความและหลอดให้มาอยู่กึ่งกลาง */
+      }
+      
+      .gpa-value {
+        align-self: center;    /* ยกเลิกค่าเดิม (flex-end) เพื่อให้ตัวเลขอยู่กึ่งกลางใต้หลอด */
+        margin-top: 0.5rem;    /* เพิ่มระยะห่างด้านบนนิดหน่อยให้ดูสบายตา */
+      }
     }
 
     /* Project Grid and Cards */
